@@ -1003,11 +1003,7 @@ animation-delay: .5s;
   }
   
   .hero .textos-hero .helper{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    align-self:flex-start;
-    flex-direction: column;
+   
     margin-right: 10%;
     margin-top: -5%;
     width: 400px;
@@ -1015,6 +1011,15 @@ animation-delay: .5s;
     background-color: red;
     z-index: 9;
     
+  }
+  .hero .textos-hero .helper .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50%;
+    width: 400px;
+    height: 500px;
   }
   
   .hero .textos-hero .helper .app-buttons{
