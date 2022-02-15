@@ -1009,6 +1009,7 @@ animation-delay: .5s;
     align-self:flex-start;
     flex-direction: column;
     margin-right: 60%;
+    margin-top: -5%;
     width: 400px;
     z-index: 9;
     
@@ -1093,6 +1094,7 @@ animation-delay: .5s;
     justify-content: center;
     align-items: center;
     width: 400px;
+    height: 100%;
   }
   .textos-hero .helper p{
     font-size: 30px;
