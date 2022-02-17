@@ -67,6 +67,7 @@ p{
     align-items: center;
     flex-direction: row;
     margin-left: 0px;
+    margin-top: -8%;
 }
 
 .hero .textos-hero .helper  .app-button{
@@ -125,7 +126,7 @@ p{
   width: 300px;
   height: 250px;
   filter: drop-shadow( 10px  10px 4px #383838);
-  margin-bottom: -170px;
+  margin-bottom: -40%;
   
 }
 
@@ -181,7 +182,7 @@ p{
  
 }
 #header {
-	position: absolute;
+	position: fixed;
 	z-index: 1000;
 	left: 0;
 	top: 0;
@@ -661,8 +662,8 @@ animation-delay: .5s;
   flex-direction: column;
 }
 .title-consult{
-  margin-top: 100px;
-  margin-bottom: -90px;
+  margin-top: 200px;
+  margin-bottom: -30%;
   padding-top: 50px;
 }
 
@@ -672,6 +673,70 @@ animation-delay: .5s;
   align-items: center;
   flex-direction: column;
 }
+.form{
+  width: 90%;
+  height: 500px;
+  margin-top: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 200px;
+  
+}
+ .form form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ .form form .input-name{
+  background: #f8f7f7;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 250px;
+  height: 48px;
+  padding: 10px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+ .form form .input-email{
+  background: #f8f7f7;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 250px;
+  height: 48px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+ .form form .input-text{
+  background: #f8f7f7;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+ .form form .input-button{
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(226, 119, 39, 1);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+ .form form .input-button:hover{
+  background-color: rgb(235, 137, 62);
+}
+
 
 
 /* contact Section */
@@ -680,6 +745,7 @@ animation-delay: .5s;
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
+  margin-top: 100px;
 }
 #contact .contact .section-title{
   font-size: 4rem;
@@ -735,71 +801,7 @@ animation-delay: .5s;
   flex-direction: column;
   
 }
- .form{
-  width: 400px;
-  height: 600px;
-  margin-top: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 10px;
-  margin-bottom: 70px;
-  background-color: white;
-  margin-bottom: 200px;
-  
-}
- .form form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
- .form form .input-name{
-  background: #f8f7f7;
-  border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 250px;
-  height: 48px;
-  padding: 10px;
-  margin-top: 70px;
-  margin-bottom: 40px;
-}
- .form form .input-email{
-  background: #f8f7f7;
-  border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 250px;
-  height: 48px;
-  padding: 10px;
-  margin-bottom: 40px;
-}
- .form form .input-text{
-  background: #f8f7f7;
-  border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 250px;
-  height: 200px;
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
- .form form .input-button{
-  height: 40px;
-  width: 150px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(226, 119, 39, 1);
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
- .form form .input-button:hover{
-  background-color: rgb(235, 137, 62);
-}
-
+ 
 /* FOOTER*/
 
 #footer{
@@ -990,8 +992,8 @@ animation-delay: .5s;
     margin: 1.5%;
   }
   .hero{
-    background-image: linear-gradient(40deg, rgba(78,170,170,1) 0%, rgba(40,125,120,1) 0%, rgba(78,170,170,1) 76%, rgba(52,145,140,1) 100%);
-    width: 100%;
+    background-image: linear-gradient(40deg, rgb(78, 170, 170) 0%, rgba(40,125,120,1) 0%, rgba(78,170,170,1) 76%, rgba(52,145,140,1) 100%);
+    width: 100vw;
     overflow-x: hidden;
     height: 650px;
     background-size: cover;
@@ -1008,7 +1010,6 @@ animation-delay: .5s;
     margin-top: -5%;
     width: 400px;
     height: 500px;
-    background-color: red;
     z-index: 9;
     
   }
@@ -1055,7 +1056,7 @@ animation-delay: .5s;
   .hero .textos-hero .helper .app-button p {
     color: white;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 25px;
     height: 60px;
     
    
@@ -1085,7 +1086,7 @@ animation-delay: .5s;
   }
   
   .textos-hero .img{
-    margin-top: -1%;
+    margin-top: -30%;
     height: 450px;
     width: 570px;
     filter: drop-shadow( 10px  10px 4px #383838);
@@ -1170,6 +1171,152 @@ animation-delay: .5s;
     height: 550px;
     width: 800px;
   }
+
+  #consult .consult{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title-consult{
+    margin-top: 100px;
+    margin-bottom: -90px;
+    padding-top: 50px;
+  }
+  
+  .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .form{
+    width: 400px;
+    height: 600px;
+    margin-top: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    background-color: white;
+    margin-bottom: 200px;
+    
+  }
+   .form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+   .form form .input-name{
+    background: #f8f7f7;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 250px;
+    height: 48px;
+    padding: 10px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+   .form form .input-email{
+    background: #f8f7f7;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 250px;
+    height: 48px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+   .form form .input-text{
+    background: #f8f7f7;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  
+   .form form .input-button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(226, 119, 39, 1);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+   .form form .input-button:hover{
+    background-color: rgb(235, 137, 62);
+  }
+  
+  .download{
+    width: 100vw;
+  }
+  .contenedor{
+    background: rgba(78, 170, 170, 1);
+    height: max-content;
+    padding-bottom: 100px;
+    width: 100vw;
+  }
+  
+  
+  .contenedor h1{
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align:center;
+    margin-bottom: 70px;
+  }
+  
+  .contenedor h1 span{
+    color:rgba(226, 119, 39, 1)
+  }
+  
+  .contenedor .contenedor-textos-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10%;
+  
+  }
+  
+  .contenedor .contenedor-textos-main .img img{
+    height: 400px;
+    width: 500px;
+    margin-left: 20%;
+    border-radius: 10px;
+  }
+  .contenedor .contenedor-textos-main .list{
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 0;
+    
+  }
+  .contenedor .contenedor-textos-main .list ul li{
+    font-size: large;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
   
   
 }
