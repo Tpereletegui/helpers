@@ -514,16 +514,7 @@ animation-delay: .5s;
 }
 
 /*Clients section*/
-#clients .clients{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  margin-top: 100px;
-  margin-bottom: 250px;
 
-}
 
 #clients .clients  .clients-top .clients-title  {
   font-size: 4rem;
@@ -538,27 +529,58 @@ animation-delay: .5s;
   color:rgb(221, 132, 30);
 }
 
-#clients .clients .clients-images{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+.carousel{
+  width: 100%;
+}
+.carousel__contenedor{
+  position: relative;
 }
 
-#clients .clients .clients-images .image{
-  width: 15%;
-  height:10%;
-  margin: 20px;
-  
-  
+
+
+
+.carousel__anterior,
+.carousel__siguiente{
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color: black;
+  opacity: 20%;
 }
 
-#clients .clients .clients-images .image img{
-  max-width: 100%;
-  max-height: 100%;
+.carousel__anterior{
+  left: -30px;
 
 }
+
+.carousel__siguiente{
+  right: -30px;
+}
+.carousel__lista{
+  overflow: hidden;
+}
+
+.carousel__elemento{
+  width: 300px;
+  height: 200px;
+  margin-right: 30px;
+}
+
+.carousel__elemento img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
 
 /* App section*/
 
@@ -652,6 +674,122 @@ animation-delay: .5s;
 }
 
 
+#slider{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+
+
+
+#slider .container{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#slider .container h1{
+  font-size: 4rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: -30px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align:center;
+}
+#slider .container span{
+  font-size: 4rem;
+  font-weight: 400;
+  color:rgb(221, 132, 30);
+  margin-bottom: -30px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align:center;
+}
+
+.slide-img{
+  width: 300px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-1{
+  background-image: url("img/clients/darko-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-2{
+  background-image: url("img/clients/despegar-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-3{
+  background-image: url("img/clients/endeavor-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-4{
+  background-image: url("img/clients/genexus-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-5{
+  background-image: url("img/clients/globant-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-6{
+  background-image: url("img/clients/megalabs-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-7{
+  background-image: url("img/clients/megatlon-removebg-preview\ \(1\).png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-8{
+  background-image: url("img/clients/mercadolibre-removebg-preview.png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-9{
+  background-image: url("img/clients/mooveit-removebg-preview.png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-10{
+  background-image: url("img/clients/pedidosya-removebg-preview.png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-11{
+  background-image: url("img/clients/rappi-removebg-preview.png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-12{
+  background-image: url("img/clients/tata-removebg-preview.png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-13{
+  background-image: url("img/clients/ucu-removebg-preview.png");
+  
+}
+#slider .container .subcontainer .slider-wrapper .my-slider  .img-14{
+  background-image: url("img/clients/unilever-removebg-preview.png");
+  
+}
+
+
+#slider .subcontainer{
+  width: 85%;
+  margin: auto;
+}
+
+
+
 
 
 .contenedor img {
@@ -659,92 +797,59 @@ animation-delay: .5s;
   width: 800px;
 }
 
+#consult {
+  height: max-content;
+}
 
-
-#consult .consult{
-  width: 100vw;
+#consult .contenedor .contenido{
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.title-consult{
-  margin-top: 200px;
-  margin-bottom: -30%;
-  padding-top: 50px;
+
 }
 
-.formulario{
+#consult .contenedor .contenido .img{
+ display: none;
+}
+#consult .contenedor .contenido .img img{
+  width: 100%;
+  height: 100%;
+}
+
+#consult .contenedor .contenido .text{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
 }
-.form{
-  width: 90%;
-  height: 500px;
-  margin-top: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 10px;
-  background-color: white;
-  margin-bottom: 200px;
+
+#consult .contenedor .contenido .text img{
+  width: 100%;
+  height: 20%;
+}
+
+#consult .contenedor .contenido .text  h1{
+  margin-top: 20px;
+  margin-bottom: 10%;
   
 }
- .form form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
- .form form .input-name{
-  background: #f8f7f7;
-  border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 250px;
-  height: 48px;
-  padding: 10px;
-  margin-top: 70px;
-  margin-bottom: 40px;
-}
- .form form .input-email{
-  background: #f8f7f7;
-  border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 250px;
-  height: 48px;
-  padding: 10px;
-  margin-bottom: 40px;
-}
- .form form .input-text{
-  background: #f8f7f7;
-  border: 1px solid #E5E5E5;
-  box-sizing: border-box;
-  border-radius: 6px;
-  width: 250px;
-  height: 150px;
-  padding: 10px;
-  margin-bottom: 40px;
-}
-
- .form form .input-button{
-  height: 40px;
-  width: 150px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(226, 119, 39, 1);
+#consult .contenedor .contenido .text  h2{
+  font-size: 4rem;
   color: white;
-  font-size: 20px;
-  cursor: pointer;
+  
 }
 
- .form form .input-button:hover{
-  background-color: rgb(235, 137, 62);
+#consult .contenedor .contenido .text  p{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: rgb(124, 11, 124);
+  font-weight: 700;
 }
-
 
 
 /* contact Section */
@@ -893,8 +998,27 @@ animation-delay: .5s;
   }
 }
 
+@media only screen and (min-width: 500px) {
+ 
+
+.textos-hero .img{
+  margin-top: 300px;
+  width: 300px;
+  height: 250px;
+  filter: drop-shadow( 10px  10px 4px #383838);
+  margin-bottom: -20%;
+  
+}
 
 @media only screen and (min-width: 768px){
+  .textos-hero .img{
+    margin-top: 400px;
+    width: 300px;
+    height: 250px;
+    filter: drop-shadow( 10px  10px 4px #383838);
+    margin-bottom: -10%;
+    
+  }
   .cta{
     font-size: 2.5rem;
     padding: 20px 60px;
@@ -1094,7 +1218,7 @@ animation-delay: .5s;
   }
   
   .textos-hero .img{
-    margin-top: -30%;
+    margin-top:0;
     height: 450px;
     width: 570px;
     filter: drop-shadow( 10px  10px 4px #383838);
@@ -1319,14 +1443,205 @@ animation-delay: .5s;
     margin-bottom: 10px;
   }
   
+  .swiper__container{
+    height: 100vh;
+    width: 100vw;
+  }
   
   
+  .carousel{
+    width: 100%;
+  }
+  .carousel__contenedor{
+    position: relative;
+  }
+
+ 
+ 
   
+  .carousel__anterior,
+  .carousel__siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: black;
+    opacity: 20%;
+  }
+
+  .carousel__anterior{
+    left: -30px;
+
+  }
+
+  .carousel__siguiente{
+    right: -30px;
+  }
+  .carousel__lista{
+    overflow: hidden;
+  }
+
+  .carousel__elemento{
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+  }
+
+  .carousel__elemento img{
+    width: 100%;
+    height: 100%;
+  }
   
-  
-  
-  
-  
+    #slider{
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #slider .container{
+      width: 100%;
+      margin: auto;
+    }
+
+    .slide-img{
+      width: 300px;
+      height: 200px;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-1{
+      background-image: url("img/clients/darko-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-2{
+      background-image: url("img/clients/despegar-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-3{
+      background-image: url("img/clients/endeavor-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-4{
+      background-image: url("img/clients/genexus-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-5{
+      background-image: url("img/clients/globant-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-6{
+      background-image: url("img/clients/megalabs-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-7{
+      background-image: url("img/clients/megatlon-removebg-preview\ \(1\).png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-8{
+      background-image: url("img/clients/mercadolibre-removebg-preview.png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-9{
+      background-image: url("img/clients/mooveit-removebg-preview.png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-10{
+      background-image: url("img/clients/pedidosya-removebg-preview.png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-11{
+      background-image: url("img/clients/rappi-removebg-preview.png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-12{
+      background-image: url("img/clients/tata-removebg-preview.png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-13{
+      background-image: url("img/clients/ucu-removebg-preview.png");
+      
+    }
+    #slider .container .subcontainer .slider-wrapper .my-slider  .img-14{
+      background-image: url("img/clients/unilever-removebg-preview.png");
+      
+    }
+    
+
+    #slider .subcontainer{
+      width: 85%;
+      margin: auto;
+    }
+
+    #consult .contenedor .contenido{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+    
+    }
+    
+    #consult .contenedor .contenido .img{
+      width: 50%;
+      height: 80%;
+      margin-left: 20%;
+      margin-right: 20%;
+      display: block;
+    }
+    #consult .contenedor .contenido .img img{
+      width: 100%;
+      height: 100%;
+    }
+    
+    #consult .contenedor .contenido .text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-right: -30%;
+      margin-top: -10%;
+    
+    }
+    
+    #consult .contenedor .contenido .text img{
+      width: 30%;
+      height: 10%;
+    }
+    
+    #consult .contenedor .contenido .text  h1{
+      margin-top: 20px;
+      margin-bottom: 10%;
+      
+    }
+    
+    #consult .contenedor .contenido .text  h2{
+      font-size: 4rem;
+      color: white;
+      
+    }
+    
+    #consult .contenedor .contenido .text  p{
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: rgb(124, 11, 124);
+      font-weight: 700;
+    }
+    
+    
+    
 }
+
 
 
