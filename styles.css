@@ -1553,8 +1553,8 @@ animation-delay: .5s;
     }
     
     #consult .contenedor .contenido .img{
-      width: 50%;
-      height: 80%;
+      width: 500px;
+      height: 650px;
       margin-left: 20%;
       margin-right: 20%;
       display: block;
