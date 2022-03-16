@@ -457,6 +457,7 @@ animation-delay: .5s;
 
 #services .service-top p {
   color: black;
+  text-align: center;
 }
 
 
@@ -699,6 +700,42 @@ animation-delay: .5s;
   height: 550px;
   width: 800px;
 }
+
+
+/* plus section */
+
+.plus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.plus .plus-top .title p{
+  font-size: 4rem;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align:center;
+}
+.plus .plus-top .title span{
+  color:rgba(226, 119, 39, 1);
+}
+.plus .plus-top .plus-text{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.plus .plus-top .plus-text p{
+  color: black;
+  text-align: center;
+}
+/* end plus section */
+
 
 #consult {
   height: max-content;
@@ -961,9 +998,7 @@ animation-delay: .5s;
 		min-width: 20vh;
 	}
 
-  #contact .section-title{
-
-  }
+  
 	#contact .contact-items {
 		width: 100%;
 		display: flex;
