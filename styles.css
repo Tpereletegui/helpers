@@ -450,6 +450,10 @@ animation-delay: .5s;
   letter-spacing: .2rem;
   text-align:center;
 }
+#services .services .service-top p{
+  line-height: 25px;
+  text-align: center;
+}
 
 #services .section-title span {
   color: rgb(221, 132, 30);
@@ -502,9 +506,9 @@ animation-delay: .5s;
   text-transform: uppercase;
 }
 #services .service-item p span{
-  color: rgba(226, 119, 39, 1);
+  color: white;
   font-weight: 700;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 
@@ -613,7 +617,8 @@ animation-delay: .5s;
   margin-bottom: 70px;
 }
 #app .app .app-title span{
- color: rgb(221, 132, 30);
+ color: white;
+ 
 }
 
 .app-content{
@@ -733,6 +738,8 @@ animation-delay: .5s;
 .plus .plus-top .plus-text p{
   color: black;
   text-align: center;
+  font-size: 1.5rem;
+  line-height: 25px;
 }
 /* end plus section */
 
